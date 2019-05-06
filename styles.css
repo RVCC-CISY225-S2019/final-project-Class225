@@ -1,0 +1,278 @@
+body {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.2em;
+    background-image: url(images/background-wall_2.jpg)
+}
+
+.navbar {
+    background-color: #3b8509;
+}
+
+.nav-links:hover,
+.nav-links:focus {
+    background: white;
+    color: black;
+
+}
+
+.back-to-top > a {
+    color: #3b8509;
+    background: white;
+}
+
+.back-to-top > a:hover,
+.back-to-top > a:focus {
+    outline: none;
+    background: #3b8509;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    filter: grayscale(0.9);
+    border: double;
+}
+
+.my-picture,
+.my-hero {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2,
+.my-name,
+.my-location {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #3b8509;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 4px;
+    background: gainsboro;
+}
+
+h2,
+.my-name {
+    text-transform: uppercase;
+
+}
+
+.my-info {
+    text-align: right;
+}
+
+figcaption,
+.feature {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #3b8509;
+    font-weight: 600;
+}
+
+figcaption {
+    background: white;
+    border: double;
+    border-color: black;
+    padding: 10px;
+}
+
+.letter {
+    float: left;
+    font-size: 400%;
+    margin-right: 5px;
+    color: #3b8509;
+    vertical-align: super;
+    margin-bottom: -16px;
+    margin-top: -0.8rem;
+}
+
+
+.contact {
+    background: white;
+    border: double;
+}
+
+legend {
+    font-size: 1.2em;
+}
+
+input,
+textarea {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1em;
+    min-width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    background: #3b8509;
+    color: #ffffff;
+}
+
+input[type="radio"] {
+    min-width: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #3b8509;
+    color: #ffffff;
+}
+
+/*  grids */
+
+main {
+    display: grid;
+}
+
+/* hero content */
+
+.content {
+    display: grid;
+}
+
+/* about content */
+
+.about-content,
+.story-body {
+    display: grid;
+    background: white;
+    border: double;
+    padding: 30px;
+
+}
+
+/*  gallery */
+
+.gallery,
+.video {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+}
+
+figure {
+    display: grid;
+
+}
+/*  article */
+
+article {
+    display: grid;
+}
+
+/* form container */
+.form-container {
+    display: grid;
+}
+
+/* footer */
+
+footer {
+    display: grid;
+}
+
+.fa-github-square {
+    color: black;
+    font-size: 2em;
+}
+
+/*  layout */
+
+/*   mobile is the default layout*/
+
+/* tablet layout >=48rem (768px) */
+
+@media screen and (min-width: 48rem) {
+
+    /*      hero content */
+    .content {
+        grid-template-columns: 1fr 40ch 1fr;
+    }
+
+    .content picture,
+    .content p,
+    .about-content {
+        grid-column: 2/3;
+
+    }
+
+    /*	about content */
+
+
+    /*	gallery */
+
+    figure
+        {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    figcaption {
+        margin-left: 1rem;
+    }
+
+    /*	article */
+    article,
+    .video,
+    .form-container {
+        grid-template-columns: 1fr 48ch 1fr;
+    }
+
+    .story h2,
+    .story-body,
+    .video h2,
+    video,
+    form,
+    .form-container h2 {
+        grid-column: 2/3;
+    }
+
+    /*	form */
+
+}
+
+/* wide screen layout >=64rem (1024px) */
+
+@media screen and (min-width: 64rem) {
+    .mobile-first {
+        display: none;
+    }
+
+    video
+    {
+        width: 100%;
+    }
+    /*      hero content */
+
+    /*	about content */
+
+    /*	gallery */
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery h1 {
+        grid-column: 1/4;
+    }
+
+    figure {
+        grid-column: auto;
+    }
+
+    figure {
+        grid-template-columns: 1fr;
+    }
+
+    /*	article */
+
+    /*	form */
+
+}
