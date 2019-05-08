@@ -94,7 +94,7 @@
                     <source media="(min-width: 960px)" srcset="images/himalai-2014-1-med.jpg">
                     <source media="(min-width: 640px)" srcset="images/himalai-2014-1-small.jpg">
                     <img src="images/himalai-2014-1-xsmall.jpg" alt="This is Langtang - Himalai">
-                    <i class="fas fa-camera-retro"></i>
+
                 </picture>
                 <figcaption>This is Langtang - Himalai</figcaption>
             </figure>
@@ -238,11 +238,11 @@
 
         <!-- start of my article -->
 
-        <article id="story" class="story">
+        <article class="story">
             <h2>
                 Accessibility
             </h2>
-            <div id="story_body" class="story-body">
+            <div class="story-body">
 
                 <picture class="my-hero">
 
@@ -256,14 +256,25 @@
                 <ul>
                     <li>
                         All functionality must be usable with the keyboard. That is, users can access links, buttons, forms, and other controls using the Tab key and other keystrokes. (W3C)
+                        <br>
+
                     </li>
-                    <br>
                     <li>
                         Keyboard focus should be visible and should follow a logical order through the page elements. Visible keyboard focus could be a border or highlight that moves as you tab through the web page.
+                        <br>
+
+                    </li>
+                    <li>
+                        If a person with motor disability can use a mouse, the size of buttons should be big enough to easily point a mouse on them.
+                        <br>
+
+                    </li>
+                    <li>
+                        It should not be a time limitation for individual keystrokes.
                     </li>
                 </ul>
 
-                <p>    </p>
+                <p> </p>
 
 
             </div>
@@ -310,22 +321,24 @@
     <!-- end of contact form -->
     <!-- start of footer -->
     <footer>
-        <br class="mobile-first"><br class="mobile-first">
+        <br>
         Copyright &copy; 2019 Svetlana Kanel
+        <br><br>
+        <div class="icons">
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" /> </a>
+
+            <a href="https://github.com/Class225"> <i class="fab fa-github-square"></i> </a>
+
+            <a href="https://www.facebook.com/svetlana.kanel"> <i class="fab fa-facebook-square"></i> </a>
+
+            <br> <br>
+        </div>
     </footer>
 
     <!-- end of footer -->
-    <br class="mobile-first"><br class="mobile-first">
-    <!-- start of the sign of validation -->
-    <p>
-        <a href="http://jigsaw.w3.org/css-validator/check/referer">
-            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
-        </a>
-        <a href="https://github.com/Class225"> <i class="fab fa-github-square"></i> </a>
-        <a href="https://www.facebook.com/svetlana.kanel"> <img src="images/FB-free.png" alt="link on my facebook page"></a>
-    </p>
 
-    <!-- end of the sign of walidation -->
+
     <!-- start of javascript for nav toggle -->
     <script>
         let mainNav = document.getElementById('js-menu');
@@ -343,6 +356,9 @@
                 symbolToggle.classList.add('fa-bars');
             }
         });
+
     </script>
     <!-- end of javascript for nav toggle -->
-</body></html>
+</body>
+
+</html>

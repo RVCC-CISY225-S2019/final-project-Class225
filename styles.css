@@ -84,7 +84,7 @@ figcaption {
     color: #3b8509;
     vertical-align: super;
     margin-bottom: -16px;
-    margin-top: -0.8rem;
+    margin-top: -0.7rem;
 }
 
 
@@ -125,6 +125,21 @@ button:focus {
     color: #ffffff;
 }
 
+footer {
+    background: #3b8509;
+    color: #fff;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.fa-github-square,
+.fa-facebook-square {
+    color: #fff;
+    font-size: 2em;
+
+}
+
 /*  grids */
 
 main {
@@ -161,6 +176,7 @@ figure {
     display: grid;
 
 }
+
 /*  article */
 
 article {
@@ -178,10 +194,6 @@ footer {
     display: grid;
 }
 
-.fa-github-square {
-    color: black;
-    font-size: 2em;
-}
 
 /*  layout */
 
@@ -208,8 +220,7 @@ footer {
 
     /*	gallery */
 
-    figure
-        {
+    figure {
         grid-template-columns: 1fr 1fr;
         align-items: center;
     }
@@ -245,10 +256,10 @@ footer {
         display: none;
     }
 
-    video
-    {
+    video {
         width: 100%;
     }
+
     /*      hero content */
 
     /*	about content */
